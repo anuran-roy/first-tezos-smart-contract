@@ -1,0 +1,20 @@
+{
+  "name": "Calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-contracts": "./compile.sh",
+    "deploy-contracts": "ts-node deployment/deploy.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@taquito/signer": "^11.2.0",
+    "@taquito/taquito": "^11.2.0",
+    "dotenv": "^15.0.0",
+    "ts-node": "^10.4.0"
+  }
+}

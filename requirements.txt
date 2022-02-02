@@ -1,0 +1,4 @@
+future==0.18.2
+numpy==1.22.1
+scipy==1.7.3
+smartpy==0.2.1
