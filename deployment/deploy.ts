@@ -5,7 +5,7 @@ import { InMemorySigner } from "@taquito/signer";
 dotenv.config(); /* This loads the variables in your .env file to process.env */
 
 const deploy = async () => {
-  const { TEZOS_RPC_URL, ORIGINATOR_PRIVATE_KEY } = // process.env;
+  const { TEZOS_RPC_URL, ORIGINATOR_PRIVATE_KEY } = process.env;
 
   const signer = await InMemorySigner.fromSecretKey(ORIGINATOR_PRIVATE_KEY);
   const Tezos = new TezosToolkit(TEZOS_RPC_URL);
